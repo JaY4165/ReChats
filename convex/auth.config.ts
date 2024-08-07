@@ -2,7 +2,7 @@
 const convexConfig = {
     providers: [
         {
-            domain: "https://knowing-redbird-54.clerk.accounts.dev",
+            domain: process.env.CONVEX_DOMAIN! as string,
             applicationID: "convex",
         },
     ]
